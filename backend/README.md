@@ -1,7 +1,7 @@
 # React + Vite
 
 To Run:
-cd frontend
+cd backend
 Run: 
 'npm install'
-'npm run dev'
+'python manage.py runserver'

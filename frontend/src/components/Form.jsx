@@ -12,6 +12,8 @@ function Form({route, method}) {
     const navigate = useNavigate();
 
     const name = method === "login" ? "Login" : "Register";
+    const altName = method === "register" ? "Login" : "Register";
+
 
     const handleSubmit = async (e) => {
         setLoading(true);
@@ -54,6 +56,7 @@ function Form({route, method}) {
         <button className="form-button" type="submit">
             {name}
         </button>
+        <a href={`/${altName}`} className="link-primary">{altName}</a>
     </form>
 }
 
